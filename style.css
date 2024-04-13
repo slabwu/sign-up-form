@@ -1,6 +1,7 @@
 body {
     display: flex;
     background-color: #efefef;
+    font-family: 'Nunito', sans-serif;
 }
 
 form {
