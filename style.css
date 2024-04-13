@@ -5,10 +5,9 @@ body {
 }
 
 form {
-    width: 500px;
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
