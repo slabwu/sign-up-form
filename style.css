@@ -2,12 +2,13 @@ body {
     display: flex;
     background-color: rgb(123, 123, 235);
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
 form {
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 20px;
+    gap: 5px 50px;
     margin-bottom: 20px;
     width: 200px;
 }
@@ -15,11 +16,13 @@ form {
 form div {
     display: flex;
     flex-direction: column;
+    height: 100px;
 }
 
 img {
-    width: 600px;
+    max-width: auto;
     height: 100vh;
+    object-fit: cover;
 }
 
 .main {
@@ -33,12 +36,13 @@ img {
 .form {
     background-color: white;
     margin: 0 20px 0;
-    padding: 20px 50px 20px;
+    padding: 20px 50px 40px;
     border-radius: 20px;
-    width: 100%;
+    min-width: 440px;
 }
 
 input {
+    margin-top: 5px;
     width: 200px;
     height: 25px;
     border-radius: 5px;
@@ -48,6 +52,7 @@ input {
 
 input:invalid {
     border-color: red;
+    height: 25px;
 }
 
 button {
@@ -76,12 +81,20 @@ a, h1 {
     color: red;
     margin-top: 5px;
 }
+h1 {
+    margin-bottom: 10px;
+}
 
 h3 {
     max-width: 550px;
+    margin-top: 0px;
 }
 
-@media (max-width:110px){
+p {
+    margin-top: 10px;
+}
+
+@media (max-width:1100px){
     img{
         display:none;
     }
