@@ -35,3 +35,23 @@ img {
     padding: 20px;
     border-radius: 20px;
 }
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: grey solid 1px;
+    padding-left: 7px;
+}
+
+button {
+    border: none;
+    height: 45px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
