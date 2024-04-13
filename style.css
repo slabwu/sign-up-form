@@ -94,8 +94,19 @@ p {
     margin-top: 10px;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+  }
+
+.credit {
+    position: absolute;
+    bottom: 8px;
+    left: 24px;
+}
+
 @media (max-width:1100px){
-    img{
+    img, .credit {
         display:none;
     }
 }
