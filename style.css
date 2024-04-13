@@ -1,3 +1,7 @@
+body {
+    display: flex;
+}
+
 form {
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr;
@@ -6,4 +10,12 @@ form {
 form div {
     display: flex;
     flex-direction: column;
+}
+
+img {
+    width: 400px;
+}
+
+.main {
+    flex: 1;
 }
