@@ -1,4 +1,7 @@
 const inputs = document.querySelectorAll("input");
+const button = document.querySelector("button");
+const form = document.querySelector("form");
+
 inputs.forEach((input) => input.addEventListener('blur', (e) => {
     if (e.target.checkValidity()) {
         e.target.nextElementSibling.textContent = "";
@@ -12,9 +15,6 @@ inputs.forEach((input) => input.addEventListener('blur', (e) => {
         e.target.nextElementSibling.textContent = "Password must be at least 8 characters long";
     }
 }));
-
-const button = document.querySelector("button");
-const form = document.querySelector("form");
 
 button.addEventListener('click', (e) => {
     if (form.checkValidity()) {

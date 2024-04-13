@@ -70,3 +70,9 @@ a {
     color: red;
     margin-top: 5px;
 }
+
+@media (max-width:1000px){
+    img{
+        display:none;
+    }
+}
