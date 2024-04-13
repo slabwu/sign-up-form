@@ -30,15 +30,15 @@
                 </div>
                 <div>
                     <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" pattern="[+0-9]{10}">
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" minlength="8">
                 </div>
                 <div>
                     <label for="confirm_password">Confirm password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="8">
                 </div>
             </form>
             <button type="submit" value="submit" form="sign-up">Create Account </button>
