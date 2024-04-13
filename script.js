@@ -12,3 +12,18 @@ inputs.forEach((input) => input.addEventListener('blur', (e) => {
         e.target.nextElementSibling.textContent = "Password must be at least 8 characters long";
     }
 }));
+
+const button = document.querySelector("button");
+const form = document.querySelector("form");
+
+button.addEventListener('click', (e) => {
+    if (form.checkValidity()) {
+        let empty = false;
+        inputs.forEach((input) => {
+            if (input.value == "") empty = true;
+        })
+        empty? alert('Please fill in the entire form!') : alert('Form successfully submitted!');
+   } else {
+        e.preventDefault();
+   }
+});
