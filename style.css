@@ -3,6 +3,7 @@ body {
 }
 
 form {
+    width: 500px;
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr;
 }
